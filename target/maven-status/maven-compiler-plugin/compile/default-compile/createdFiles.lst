@@ -1,0 +1,13 @@
+org/quantyca/data/XmlDeserializer$Builder.class
+org/apache/kudu/flume/sink/TestataScontrinoKuduOperationsProducer.class
+org/quantyca/data/TestataScontrino.class
+org/apache/kudu/flume/sink/KuduSink.class
+org/quantyca/data/XmlDeserializer.class
+org/quantyca/data/RigaScontrino.class
+org/quantyca/data/Mapper.class
+org/apache/kudu/flume/sink/KuduSinkConfigurationConstants.class
+org/apache/kudu/flume/sink/RigaScontrinoKuduOperationsProducer.class
+org/apache/kudu/flume/sink/SimpleKeyedKuduOperationsProducer.class
+org/quantyca/data/FlumeInputStream.class
+org/apache/kudu/flume/sink/SimpleKuduOperationsProducer2.class
+org/apache/kudu/flume/sink/KuduOperationsProducer.class

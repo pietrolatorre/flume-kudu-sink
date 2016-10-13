@@ -1,0 +1,12 @@
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/quantyca/data/TestataScontrino.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/SimpleKeyedKuduOperationsProducer.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/quantyca/data/Mapper.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/KuduSinkConfigurationConstants.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/KuduOperationsProducer.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/RigaScontrinoKuduOperationsProducer.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/quantyca/data/RigaScontrino.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/TestataScontrinoKuduOperationsProducer.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/quantyca/data/XmlDeserializer.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/quantyca/data/FlumeInputStream.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/SimpleKuduOperationsProducer2.java
+/data/sw/git/kudu/java/kudu-flume-sink/src/main/java/org/apache/kudu/flume/sink/KuduSink.java
