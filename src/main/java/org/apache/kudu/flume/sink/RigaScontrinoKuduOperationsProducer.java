@@ -69,25 +69,30 @@ public class RigaScontrinoKuduOperationsProducer implements KuduOperationsProduc
   
   public List<Operation> getOperations(Event event) throws FlumeException {
     try {
-      Insert insert = table.newInsert();
+      Insert insert;
       
       String xml= new String(event.getBody());
       
       Document doc =Mapper.getDocumentFromEvent(xml);
       List<RigaScontrino> righeScontrino = Mapper.getRigheScontrinoFromDocument(doc);
+      List<Operation> operations = new ArrayList<Operation>();
       
       for(int i=0;i<righeScontrino.size();i++){
     	  RigaScontrino rigaScontrino = righeScontrino.get(i);
+    	  insert = table.newInsert();
     	  PartialRow row = insert.getRow();
     	  row.addString("id_scontrino", rigaScontrino.getId_scontrino());
     	  row.addString("id_riga", rigaScontrino.getId_riga());
-    	  row.addString("id_prodotto", rigaScontrino.getId_riga());
+    	  row.addString("id_prodotto", rigaScontrino.getId_prodotto());
     	  row.addFloat("qta", rigaScontrino.getQta());
     	  row.addFloat("prezzo", rigaScontrino.getPrezzo());
-      }
-      
-      
-      return Collections.singletonList((Operation) insert);
+    	  
+    	  //System.out.println("******* "+rigaScontrino.getId_scontrino()+"_"+i+") "+(Operation)insert);
+    	  
+    	  operations.add((Operation) insert);        	  
+      }      
+        
+      return operations;
     } catch (Exception e){
       throw new FlumeException("Failed to create Kudu Insert object", e);
     }

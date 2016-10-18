@@ -82,6 +82,8 @@ public class TestataScontrinoKuduOperationsProducer implements KuduOperationsPro
 	      row.addFloat("total_amount", testataScontrino.getTotal_amount());
       }
       
+	  //System.out.println("******* "+testataScontrino.getId_scontrino()+") "+(Operation)insert);
+      
       return Collections.singletonList((Operation) insert);
     } catch (Exception e){
       throw new FlumeException("Failed to create Kudu Insert object", e);
